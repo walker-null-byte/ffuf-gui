@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ffuf-gui"
+version = "0.1.0"
+description = "A modern web GUI wrapper for ffuf"
+readme = "README.md"
+authors = [
+  { name="Antigravity", email="antigravity@example.com" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.7"
+dependencies = [
+    "Flask>=2.0.0",
+]
+
+[project.scripts]
+ffuf-gui = "ffuf_gui.app:main"
+
+[project.urls]
+"Homepage" = "https://github.com/example/ffuf-gui"
