@@ -3,13 +3,20 @@ import sys
 import queue
 import json
 import time
+import socket
 from flask import Flask, render_template, request, Response, jsonify
-from runner import runner
+from ffuf_gui.runner import runner
 
 app = Flask(__name__)
-
 def main():
-    app.run(debug=True, port=5000, threaded=True)
+    port = 5000
+    while True:
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex(('127.0.0.1', port)) != 0:
+                break
+        port += 1
+    app.run(debug=True, port=port, threaded=True)
+
 
 @app.route('/')
 def index():

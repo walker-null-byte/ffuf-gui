@@ -4,11 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ffuf-gui"
-version = "0.1.0"
+version = "0.1.1"
 description = "A modern web GUI wrapper for ffuf"
 readme = "README.md"
 authors = [
-  { name="Antigravity", email="antigravity@example.com" },
+  { name="Dilnawaz Hossain Asrafi", email="dilnawazhossain@gmail.com" },
 ]
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -24,4 +24,4 @@ dependencies = [
 ffuf-gui = "ffuf_gui.app:main"
 
 [project.urls]
-"Homepage" = "https://github.com/example/ffuf-gui"
+"Homepage" = "https://github.com/walker-null-byte/ffuf-gui"
