@@ -1,6 +1,6 @@
 # Maintainer: Antigravity <antigravity@example.com>
 pkgname=ffuf-gui
-pkgver=0.1.1
+pkgver=0.1.2
 pkgrel=1
 pkgdesc="A modern web GUI wrapper for ffuf"
 arch=('any')

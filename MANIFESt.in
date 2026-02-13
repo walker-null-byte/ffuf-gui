@@ -1,0 +1,2 @@
+recursive-include ffuf_gui/templates *.html
+recursive-include ffuf_gui/static *.css *.js

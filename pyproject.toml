@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ffuf-gui"
-version = "0.1.1"
+version = "0.1.2"
 description = "A modern web GUI wrapper for ffuf"
 readme = "README.md"
 authors = [
@@ -19,6 +19,13 @@ requires-python = ">=3.7"
 dependencies = [
     "Flask>=2.0.0",
 ]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.package-data]
+ffuf_gui = ["templates/*", "static/*"]
+
 
 [project.scripts]
 ffuf-gui = "ffuf_gui.app:main"
